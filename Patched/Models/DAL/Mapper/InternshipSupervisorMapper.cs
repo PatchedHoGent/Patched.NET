@@ -9,8 +9,11 @@ namespace Patched.Models.DAL.Mapper
 {
     public class InternshipSupervisorMapper: EntityTypeConfiguration<InternshipSupervisor>
     {
-        //HasKey(i=>i.hoGentID);
-        //ToTable("InternshipSupervisor");
+        public InternshipSupervisorMapper()
+        {
+            HasKey(i => i.getUserID());
+            ToTable("InternshipSupervisor");
+        }
  
     }
 }

@@ -9,8 +9,9 @@ namespace Patched.Models.DAL.Mapper
 {
     public class StudentMapper: EntityTypeConfiguration<Student>
     {
-        //HasKey(s=>s.hoGentID);
-        //ToTable("Student");
+        public StudentMapper(){
+        HasKey(s=>s.getUserID());
+        ToTable("Student");}
         
     }
 }

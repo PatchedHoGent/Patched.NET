@@ -16,6 +16,8 @@ namespace Patched.Models.Domain
         private DateTime dateAdded;
         private enum status {Goedgekeurd, Afgekeurd };
 
+        public int getAssignmentID() { return assignmentID; }
+        public void setAssignmentID() { this.assignmentID = assignmentID; }
         public void setTitle(String title){this.title=title;}
         public String getTitle(){return title;}
         public void setCompany(Company company){this.company=company;}

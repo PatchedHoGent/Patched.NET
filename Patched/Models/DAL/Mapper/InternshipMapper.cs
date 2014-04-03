@@ -11,11 +11,11 @@ namespace Patched.Models.DAL.Mapper
     {
 
         public InternshipMapper(){
-        HasKey(i => i.AssignmentID);
-        Property(i => i.title).IsRequired();
+        HasKey(i => i.getAssignmentID());
+        Property(i => i.getTitle()).IsRequired();
         ToTable("Internship");
-        HasMany(i => i.students).Map(i => i.MapKey("hoGentID")).WillCascadeOnDelete(false);
-        HasOne(i=>i.internshipSupervisor).WithMany().Map(i=>i.MapKey("hoGentID")).WillCascadeOnDelete(false);
-        HasOne(if=>i.innternshipMentor).WithMany().Map(i=>i.MapKey("internshipMentorID").WillCascadeOnDelete(false);}
+        HasMany(i => i.getStudents()).Map(i => i.MapKey("hoGentID")).WillCascadeOnDelete(false);
+        HasOptional(i=>i.getInternshipSupervisor()).WithMany().Map(i=>i.MapKey("hoGentID")).WillCascadeOnDelete(false);
+        HasOptional(i=>i.getInternshipMentor()).WithMany().Map(i=>i.MapKey("userID")).WillCascadeOnDelete(false);}
     }
 }

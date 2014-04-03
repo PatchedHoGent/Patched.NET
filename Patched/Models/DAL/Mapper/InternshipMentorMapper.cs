@@ -9,9 +9,11 @@ namespace Patched.Models.DAL.Mapper
 {
     public class InternshipMentorMapper: EntityTypeConfiguration<InternshipMentor>
     {
-        public InternshipMentorMapper
-        //HasKey(i=>i.internshipMentorID);
-        //ToTable("InternshipMentor");
-        //HasOne(i=>i.company).WithMany().Map(i=>i.MapKey("CompanyID")).WillCascadeOnDelete(true);
+        public InternshipMentorMapper()
+        {
+            HasKey(i => i.getUserID());
+            ToTable("InternshipMentor");
+            HasRequired(i => i.getCompany()).WithMany().Map(i => i.MapKey("userID")).WillCascadeOnDelete(true);
+        }
     }
 }

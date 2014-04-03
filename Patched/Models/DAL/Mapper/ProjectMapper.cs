@@ -9,7 +9,10 @@ namespace Patched.Models.DAL.Mapper
 {
     public class ProjectMapper: EntityTypeConfiguration<Project>
     {
-        //HasKey(p => p.AssignmentID);
-        //ToTable("Project");
+        public ProjectMapper()
+        {
+            HasKey(p => p.getAssignmentID());
+            ToTable("Project");
+        }
     }
 }

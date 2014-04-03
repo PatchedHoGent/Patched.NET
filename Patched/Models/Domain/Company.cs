@@ -8,7 +8,6 @@ namespace Patched.Models.Domain
 {
     public class Company : User
     {
-        private int companyID;
         private String url;
         private String reachability;
         public String businessActivity;

@@ -10,7 +10,7 @@ namespace Patched.Models.DAL.Mapper
     public class BachelorProjectMapper: EntityTypeConfiguration<BachelorProject>
     {
         public BachelorProjectMapper(){
-        HasKey(b => b.);
+        HasKey(b => b.getAssignmentID());
         ToTable("BachelorProject");}
     }
 }

@@ -11,7 +11,7 @@ namespace Patched.Models.DAL.Mapper
     {
         public CompanyMapper()
         {
-            HasKey(c => c.g);
+            HasKey(c => c.getUserID());
             ToTable("Company");
         }
 
