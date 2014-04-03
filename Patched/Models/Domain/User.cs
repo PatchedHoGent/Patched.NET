@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Patched.Models
+namespace Patched.Models.Domain
 {
     public class User
     {

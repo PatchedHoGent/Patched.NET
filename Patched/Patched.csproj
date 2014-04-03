@@ -198,17 +198,25 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\Assignment.cs" />
-    <Compile Include="Models\BachelorProject.cs" />
-    <Compile Include="Models\Company.cs" />
-    <Compile Include="Models\GuestCourse.cs" />
-    <Compile Include="Models\HoGentAccount.cs" />
-    <Compile Include="Models\Internship.cs" />
-    <Compile Include="Models\InternshipMentor.cs" />
-    <Compile Include="Models\InternshipSupervisor.cs" />
-    <Compile Include="Models\Project.cs" />
-    <Compile Include="Models\Student.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Domain\Assignment.cs" />
+    <Compile Include="Models\Domain\BachelorProject.cs" />
+    <Compile Include="Models\Domain\Company.cs" />
+    <Compile Include="Models\Domain\GuestCourse.cs" />
+    <Compile Include="Models\Domain\Internship.cs" />
+    <Compile Include="Models\Domain\InternshipMentor.cs" />
+    <Compile Include="Models\Domain\InternshipSupervisor.cs" />
+    <Compile Include="Models\DAL\Mapper\BachelorProjectMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\CompanyMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\GuestCourseMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\InternshipMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\InternshipMentorMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\InternshipSupervisorMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\ProjectMapper.cs" />
+    <Compile Include="Models\DAL\Mapper\StudentMapper.cs" />
+    <Compile Include="Models\Domain\Project.cs" />
+    <Compile Include="Models\Domain\Student.cs" />
+    <Compile Include="Models\Domain\User.cs" />
+    <Compile Include="Models\Domain\HoGentAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Patched.Models
+namespace Patched.Models.Domain
 {
     public class Assignment
     {
-
+        private int assignmentID;
         private String title;
         private Company company;
         private String description;

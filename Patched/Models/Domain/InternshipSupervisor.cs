@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Patched.Models.Domain;
 
-namespace Patched.Models
+namespace Patched.Models.Domain
 {
-    public class Student : User
+    public class InternshipSupervisor : User
     {
 
         private HoGentAccount hogGentAccount;
@@ -13,7 +14,7 @@ namespace Patched.Models
         public String getHoGentAccount() { return hoGentAccount; }
         public void setHoGentAccount(String hoGentAccount) { this.hoGentAccount = hoGentAccount; }
 
-        public Student() { }
+        public InternShipSupervisor() { }
 
     }
 }
