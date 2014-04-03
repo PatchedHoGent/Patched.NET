@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Patched.Models.Domain
 {
-    public class HoGentAccount
+    public class GuestCourse
     {
     }
 }

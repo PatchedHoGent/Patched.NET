@@ -23,7 +23,7 @@ namespace Patched.Models.Domain
         public String getTelephone() { return telephone; }
         public void setTelephone(String telephone) { this.telephone = telephone; }
         public String getCellphone() { return cellphone; }
-        public void setUsername(String cellphone) { this.cellphone = cellphone; }
+        public void setCellphone(String cellphone) { this.cellphone = cellphone; }
 
         public User() { }
 

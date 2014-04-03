@@ -216,7 +216,6 @@
     <Compile Include="Models\Domain\Project.cs" />
     <Compile Include="Models\Domain\Student.cs" />
     <Compile Include="Models\Domain\User.cs" />
-    <Compile Include="Models\Domain\HoGentAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

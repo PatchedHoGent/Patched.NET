@@ -10,10 +10,10 @@ namespace Patched.Models.Domain
     public class Student : User
     {
 
-        private HoGentAccount hogGentAccount;
+        private int hoGentID;
 
-        public String getHoGentAccount() { return hoGentAccount; }
-        public void setHoGentAccount(String hoGentAccount) { this.hoGentAccount = hoGentAccount; }
+        public int getHoGentID() { return hoGentID; }
+        public void setHoGentID(int hoGentID) { this.hoGentID = hoGentID; }
 
         public Student() { }
 

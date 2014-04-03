@@ -9,12 +9,12 @@ namespace Patched.Models.Domain
     public class InternshipSupervisor : User
     {
 
-        private HoGentAccount hogGentAccount;
+        private int hoGentID;
 
-        public String getHoGentAccount() { return hoGentAccount; }
-        public void setHoGentAccount(String hoGentAccount) { this.hoGentAccount = hoGentAccount; }
+        public int getHoGentID() { return hoGentID; }
+        public void setHoGentID(int hoGentAccount) { this.hoGentID = hoGentID; }
 
-        public InternShipSupervisor() { }
+        public InternshipSupervisor() { }
 
     }
 }
